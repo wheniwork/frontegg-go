@@ -3,7 +3,7 @@ package config
 import (
 	"net/url"
 
-	"github.com/hightidecrm/frontegg/errors"
+	"github.com/hightidecrm/frontegg-go/errors"
 )
 
 type FronteggRegion string

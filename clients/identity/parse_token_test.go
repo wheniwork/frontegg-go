@@ -9,10 +9,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hightidecrm/frontegg/authenticator"
-	"github.com/hightidecrm/frontegg/clients/identity"
-	"github.com/hightidecrm/frontegg/config"
-	"github.com/hightidecrm/frontegg/internal/http_client"
+	"github.com/hightidecrm/frontegg-go/authenticator"
+	"github.com/hightidecrm/frontegg-go/clients/identity"
+	"github.com/hightidecrm/frontegg-go/config"
+	"github.com/hightidecrm/frontegg-go/internal/http_client"
 	"github.com/stretchr/testify/suite"
 )
 

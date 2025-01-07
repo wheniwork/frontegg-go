@@ -3,7 +3,7 @@ package group_types
 import (
 	"time"
 
-	"github.com/hightidecrm/frontegg/clients/roles/role_types"
+	"github.com/hightidecrm/frontegg-go/clients/roles/role_types"
 )
 
 type GroupUser struct {

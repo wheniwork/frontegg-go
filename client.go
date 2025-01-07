@@ -1,16 +1,16 @@
 package frontegg
 
 import (
-	"github.com/hightidecrm/frontegg/authenticator"
-	"github.com/hightidecrm/frontegg/clients/audits"
-	"github.com/hightidecrm/frontegg/clients/entitlements"
-	"github.com/hightidecrm/frontegg/clients/events"
-	"github.com/hightidecrm/frontegg/clients/hosted_login"
-	"github.com/hightidecrm/frontegg/clients/identity"
-	"github.com/hightidecrm/frontegg/clients/tenants"
-	"github.com/hightidecrm/frontegg/clients/users"
-	"github.com/hightidecrm/frontegg/config"
-	"github.com/hightidecrm/frontegg/internal/http_client"
+	"github.com/hightidecrm/frontegg-go/authenticator"
+	"github.com/hightidecrm/frontegg-go/clients/audits"
+	"github.com/hightidecrm/frontegg-go/clients/entitlements"
+	"github.com/hightidecrm/frontegg-go/clients/events"
+	"github.com/hightidecrm/frontegg-go/clients/hosted_login"
+	"github.com/hightidecrm/frontegg-go/clients/identity"
+	"github.com/hightidecrm/frontegg-go/clients/tenants"
+	"github.com/hightidecrm/frontegg-go/clients/users"
+	"github.com/hightidecrm/frontegg-go/config"
+	"github.com/hightidecrm/frontegg-go/internal/http_client"
 )
 
 type Frontegg struct {

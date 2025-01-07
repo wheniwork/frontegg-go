@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/hightidecrm/frontegg/authenticator"
-	"github.com/hightidecrm/frontegg/config"
+	"github.com/hightidecrm/frontegg-go/authenticator"
+	"github.com/hightidecrm/frontegg-go/config"
 )
 
 type FronteggHttpClient struct {

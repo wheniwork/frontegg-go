@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/google/go-querystring/query"
-	"github.com/hightidecrm/frontegg/clients/groups/group_types"
-	"github.com/hightidecrm/frontegg/errors"
-	"github.com/hightidecrm/frontegg/internal/http_client"
-	"github.com/hightidecrm/frontegg/types"
+	"github.com/hightidecrm/frontegg-go/clients/groups/group_types"
+	"github.com/hightidecrm/frontegg-go/errors"
+	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/hightidecrm/frontegg-go/types"
 )
 
 func (g *GroupClient) GetGroups(ctx context.Context, tenantId *string, params *types.QueryParams) (*types.FronteggPagination[group_types.Group], error) {

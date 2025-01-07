@@ -1,4 +1,4 @@
-module github.com/hightidecrm/frontegg
+module github.com/hightidecrm/frontegg-go
 
 go 1.23.2
 

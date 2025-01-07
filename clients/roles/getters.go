@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/google/go-querystring/query"
-	"github.com/hightidecrm/frontegg/clients/roles/role_types"
-	"github.com/hightidecrm/frontegg/errors"
-	"github.com/hightidecrm/frontegg/internal/http_client"
-	"github.com/hightidecrm/frontegg/types"
+	"github.com/hightidecrm/frontegg-go/clients/roles/role_types"
+	"github.com/hightidecrm/frontegg-go/errors"
+	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/hightidecrm/frontegg-go/types"
 )
 
 func (r *RoleClient) GetRoles(ctx context.Context, tenantId *string, params *types.QueryParams) (*types.FronteggPagination[role_types.Role], error) {
