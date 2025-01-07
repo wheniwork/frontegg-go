@@ -12,7 +12,7 @@ import (
 )
 
 func (t *TenantClient) CreateTenant(ctx context.Context, body *tenant_types.CreateTenantRequest) (*tenant_types.Tenant, error) {
-	fullUrl := t.cfg.Endpoint.JoinPath(baseEndpoint)
+	fullUrl := t.cfg.Endpoint.JoinPath(v1BaseEndpoint)
 
 	parsedBody, err := json.Marshal(body)
 

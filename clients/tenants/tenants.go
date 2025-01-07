@@ -7,7 +7,8 @@ import (
 )
 
 var (
-	baseEndpoint = "/tenants/resources/tenants/v2"
+	baseEndpoint   = "/tenants/resources/tenants/v2"
+	v1BaseEndpoint = "/tenants/resources/tenants/v1"
 )
 
 type TenantClient struct {
