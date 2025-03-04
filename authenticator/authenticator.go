@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/hightidecrm/frontegg-go/config"
-	"github.com/hightidecrm/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/config"
+	"github.com/wheniwork/frontegg-go/errors"
 )
 
 type FronteggAuthenticator struct {

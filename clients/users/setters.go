@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/hightidecrm/frontegg-go/clients/users/user_types"
-	"github.com/hightidecrm/frontegg-go/errors"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/wheniwork/frontegg-go/clients/users/user_types"
+	"github.com/wheniwork/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
 )
 
 func (u *UserClient) CreateUser(ctx context.Context, tenantId string, body *user_types.CreateUserRequest) (*user_types.User, error) {

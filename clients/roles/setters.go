@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/hightidecrm/frontegg-go/clients/roles/role_types"
-	"github.com/hightidecrm/frontegg-go/errors"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/wheniwork/frontegg-go/clients/roles/role_types"
+	"github.com/wheniwork/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
 )
 
 func (r *RoleClient) CreateRole(ctx context.Context, tenantId string, body *role_types.CreateRoleRequest) (*role_types.Role, error) {

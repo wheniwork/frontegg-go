@@ -6,10 +6,10 @@ import (
 	"net/http"
 
 	"github.com/google/go-querystring/query"
-	"github.com/hightidecrm/frontegg-go/clients/tenants/tenant_types"
-	"github.com/hightidecrm/frontegg-go/errors"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
-	"github.com/hightidecrm/frontegg-go/types"
+	"github.com/wheniwork/frontegg-go/clients/tenants/tenant_types"
+	"github.com/wheniwork/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
+	"github.com/wheniwork/frontegg-go/types"
 )
 
 func (t *TenantClient) GetTenants(ctx context.Context, params *types.QueryParams) (*types.FronteggPagination[tenant_types.Tenant], error) {

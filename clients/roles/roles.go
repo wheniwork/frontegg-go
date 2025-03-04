@@ -1,9 +1,9 @@
 package roles
 
 import (
-	"github.com/hightidecrm/frontegg-go/authenticator"
-	"github.com/hightidecrm/frontegg-go/config"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/wheniwork/frontegg-go/authenticator"
+	"github.com/wheniwork/frontegg-go/config"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
 )
 
 var (

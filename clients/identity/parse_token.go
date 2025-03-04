@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/hightidecrm/frontegg-go/clients/identity/identity_types"
-	"github.com/hightidecrm/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/clients/identity/identity_types"
+	"github.com/wheniwork/frontegg-go/errors"
 )
 
 func (i *IdentityClient) getUserClaims(ctx context.Context, token string) (*identity_types.FronteggUserTokenClaims, error) {

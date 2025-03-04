@@ -1,6 +1,6 @@
 package audit_types
 
-import "github.com/hightidecrm/frontegg-go/types"
+import "github.com/wheniwork/frontegg-go/types"
 
 type AuditSeverity string
 

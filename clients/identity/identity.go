@@ -8,11 +8,11 @@ import (
 	"encoding/pem"
 	"net/http"
 
-	"github.com/hightidecrm/frontegg-go/authenticator"
-	"github.com/hightidecrm/frontegg-go/clients/identity/identity_types"
-	"github.com/hightidecrm/frontegg-go/config"
-	"github.com/hightidecrm/frontegg-go/errors"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
+	"github.com/wheniwork/frontegg-go/authenticator"
+	"github.com/wheniwork/frontegg-go/clients/identity/identity_types"
+	"github.com/wheniwork/frontegg-go/config"
+	"github.com/wheniwork/frontegg-go/errors"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
 )
 
 type IdentityClient struct {

@@ -9,11 +9,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hightidecrm/frontegg-go/authenticator"
-	"github.com/hightidecrm/frontegg-go/clients/identity"
-	"github.com/hightidecrm/frontegg-go/config"
-	"github.com/hightidecrm/frontegg-go/internal/http_client"
 	"github.com/stretchr/testify/suite"
+	"github.com/wheniwork/frontegg-go/authenticator"
+	"github.com/wheniwork/frontegg-go/clients/identity"
+	"github.com/wheniwork/frontegg-go/config"
+	"github.com/wheniwork/frontegg-go/internal/http_client"
 )
 
 type IdentityTestSuite struct {
