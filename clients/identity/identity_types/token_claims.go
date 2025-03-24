@@ -1,6 +1,9 @@
 package identity_types
 
-import "github.com/golang-jwt/jwt/v5"
+import (
+	"errors"
+	"github.com/golang-jwt/jwt/v5"
+)
 
 type FronteggBaseTokenClaims struct {
 	jwt.RegisteredClaims
@@ -13,6 +16,18 @@ type FronteggBaseTokenClaims struct {
 	ApplicationID string   `json:"applicationId"`
 	Permissions   []string `json:"permissions"`
 	Roles         []string `json:"roles"`
+}
+
+func (f *FronteggBaseTokenClaims) Validate() error {
+	if f.Type == "" {
+		return errors.New("type is required")
+	}
+
+	if f.TenantId == "" {
+		return errors.New("tenantId is required")
+	}
+
+	return nil
 }
 
 func (f *FronteggBaseTokenClaims) GetTokenType() AccessTokenType {
@@ -30,6 +45,10 @@ func (f *FronteggBaseTokenClaims) IsUserToken() (bool, *FronteggUserTokenClaims)
 type FronteggTenantTokenClaims struct {
 	FronteggBaseTokenClaims
 	CreatedByUserID string `json:"createdByUserId"`
+}
+
+func (f *FronteggTenantTokenClaims) Validate() error {
+	return f.FronteggBaseTokenClaims.Validate()
 }
 
 func (f *FronteggTenantTokenClaims) GetTokenType() AccessTokenType {
@@ -53,6 +72,10 @@ type FronteggUserTokenClaims struct {
 	TenantIds []string `json:"tenantIds"`
 
 	ProfilePictureUrl string `json:"profilePictureUrl"`
+}
+
+func (f *FronteggUserTokenClaims) Validate() error {
+	return f.FronteggBaseTokenClaims.Validate()
 }
 
 func (f *FronteggUserTokenClaims) GetTokenType() AccessTokenType {
