@@ -5,6 +5,11 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
+type ActorClaims struct {
+	Subject string `json:"sub"`
+	Type    string `json:"type"`
+}
+
 type FronteggBaseTokenClaims struct {
 	jwt.RegisteredClaims
 
@@ -71,7 +76,8 @@ type FronteggUserTokenClaims struct {
 
 	TenantIds []string `json:"tenantIds"`
 
-	ProfilePictureUrl string `json:"profilePictureUrl"`
+	ProfilePictureUrl string      `json:"profilePictureUrl"`
+	Actor             ActorClaims `json:"act"`
 }
 
 func (f *FronteggUserTokenClaims) Validate() error {
